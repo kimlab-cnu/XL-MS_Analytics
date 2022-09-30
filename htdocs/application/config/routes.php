@@ -53,8 +53,6 @@ $route['default_controller'] = 'main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-// project
-// $route['controlers의 파일명'] = '클래스명/함수명';
 $route['main'] = 'main/index';
 $route['userguide'] = 'userguide/index';
 $route['search'] = 'search/index';
