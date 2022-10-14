@@ -301,6 +301,13 @@ form.searchbox > div:nth-child(1) > div.modifications > ul > li > p {
   color:rgb(108, 108, 108);
 }
 
+form.searchbox > div:nth-child(1) > div.modifications > ul > li > div > p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color:rgb(108, 108, 108);
+}
+
 form.searchbox > div:nth-child(1) > div.modifications > ul > li > label > input {
   margin: 0 20px 0 0;
   width: 10px;
