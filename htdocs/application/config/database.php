@@ -75,14 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	# This is information for DataBase connecting.
-	# Write down your DataBase information
-	'hostname' => 'input your hostname',
-	'username' => 'input user name of DataBase',
-	'password' => 'input user password',
-	'database' => 'input your title of database',
-
-	
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'project',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

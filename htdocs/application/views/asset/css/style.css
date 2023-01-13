@@ -6,10 +6,12 @@
 
 a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
-
+button:hover {
+  cursor: pointer;
+}
 
 /* 2. common/header.php  */
 div.main-home > div {
@@ -47,16 +49,12 @@ nav.main-nav {
 }
 
 nav.main-nav > ul > li {
-  margin: 0 30px 0 30px ;
+  margin: 0 30px 0 30px;
   padding: 0;
   display: inline-block;
   text-align: center;
   font-weight: lighter;
 }
-
-
-
-
 
 /* 3. common/footer.php */
 footer {
@@ -64,10 +62,6 @@ footer {
   padding: 0;
   text-align: center;
 }
-
-
-
-
 
 /* 4. main/main.php */
 main.contents {
@@ -92,21 +86,21 @@ section.main-img > img {
   top: -74px;
   left: 0;
   z-index: -1;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-section.main-img > div.maincontents {  
+section.main-img > div.maincontents {
   margin: 0;
   padding: 0;
   white-space: nowrap;
-} 
+}
 
 div.maincontents > h2 {
   margin: 70px 0 50px 0;
   padding: 0;
   text-align: center;
   font-size: 3rem;
-  color :rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 ul.main-page {
@@ -120,7 +114,7 @@ ul.main-page > li {
   padding: 0;
   display: inline-block;
   font-weight: bolder;
-  color :rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 ul.main-page > li > p:first-child {
@@ -143,12 +137,8 @@ div.readme {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  color :rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-
-
-
-
 
 /* 5. userguide/userguide.php */
 main.contents > section > h4 {
@@ -156,7 +146,7 @@ main.contents > section > h4 {
   padding: 0;
   font-size: 1.5rem;
   text-align: center;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 div.userguide {
@@ -165,7 +155,7 @@ div.userguide {
   display: flex;
   text-align: justify;
   font-size: 0.8rem;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 div.userguide > div:nth-child(1) {
@@ -223,10 +213,6 @@ div.userguide > div:nth-child(2) > div:nth-child(2) > table > tbody > tr > td {
   border-bottom: 1px dotted rgb(108, 108, 108);
 }
 
-
-
-
-
 /* 6. crosslinker/crosslinker.php & humanprotein/humanprotein.php */
 section.db-list {
   margin: 50px 0 0 0;
@@ -236,7 +222,7 @@ section.db-list {
 section.db-list > div > table {
   width: 100%;
   font-size: 0.9rem;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 section.db-list > div > table > tbody > tr > th {
@@ -250,17 +236,13 @@ section.db-list > div > table > tbody > tr > td {
   border-bottom: 1px dotted rgb(108, 108, 108);
 }
 
-
-
-
-
 /* 7. search/search.php */
 section.search > p {
   margin: 0;
   padding: 50px 0 0 0;
   font-size: 1.5rem;
   font-weight: bold;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 form.searchbox > div:nth-child(1) {
@@ -279,12 +261,12 @@ form.searchbox > div:nth-child(1) > div > ul > li > label > p {
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 form.searchbox > div div > ul > li > label > input {
   margin: 0 0 20px 0;
-  width: 358px; 
+  width: 358px;
   height: 30px;
 }
 
@@ -294,18 +276,38 @@ form.searchbox > div div > ul > li > label > select {
   height: 30px;
 }
 
+form.searchbox > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(4) > p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(108, 108, 108);
+}
+
+form.searchbox >  div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(4) > label {
+  margin: 0 20px 0 0;
+  width: 10px;
+  height: 10px;
+}
+
+form.searchbox >  div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(5) > label {
+  margin: 0 20px 0 0;
+  width: 10px;
+  height: 10px;
+}
+
+/* 변이 */
 form.searchbox > div:nth-child(1) > div.modifications > ul > li > p {
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 form.searchbox > div:nth-child(1) > div.modifications > ul > li > div > p {
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 form.searchbox > div:nth-child(1) > div.modifications > ul > li > label > input {
@@ -324,21 +326,19 @@ body > main > section > form > div:nth-child(2) > button {
   border: 0;
 }
 
-
-
-
 /* 8. search/result.php */
 section.result {
-  color :rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
-section > div:nth-child(1) > div:nth-child(1) {
+section > div > div:nth-child(1) {
   margin: 0 0 10px 50px;
   padding: 0;
+  float: left;
   text-align: left;
 }
 
-body > main > section > div:nth-child(1) > div:nth-child(1) > h4 {
+section > div > div:nth-child(1) > h4 {
   display: inline-block;
   margin: 50px 0 0 10px;
   padding: 0;
@@ -346,7 +346,7 @@ body > main > section > div:nth-child(1) > div:nth-child(1) > h4 {
   color: rgb(90, 90, 255);
 }
 
-body > main > section > div:nth-child(1) > div:nth-child(1) > p {
+section > div > div:nth-child(1) > p {
   display: inline-block;
   margin: 0 0 0 10px;
   padding: 0;
@@ -354,21 +354,89 @@ body > main > section > div:nth-child(1) > div:nth-child(1) > p {
   font-weight: bold;
 }
 
-section.result > div > table {
-  margin: 20px 0 50px 60px;
+section > div > div:nth-child(1) > table {
+  margin: 20px 0 50px 0;
   padding: 0;
-  width: 50%;
+  width: 100%;
   font-size: 0.9rem;
-  text-align: left;
-  color:rgb(108, 108, 108);
-  border: 1px solid rgb(108, 108, 108);
+  text-align: center;
+  color: rgb(108, 108, 108);
+  border: 1px solid rgb(190, 190, 190);
+  white-space: nowrap;
 }
+
+/* 옵션 시작 */
+#searchForm {
+  border-left: 1px solid rgb(190, 190, 190);
+}
+
+section.result > div > div.option {
+  margin: 50px 0 50px 50px;
+  padding: 0 0 0 0;
+  display: inline-block;
+  width: 40%;
+  float: right;
+  font-size: 0.7rem;
+}
+
+#searchForm > div {
+  margin: 0 50px 0 0;
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+#searchForm > h4 {
+  margin: 0 50px 20px 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: rgb(108, 108, 108);
+}
+
+#searchForm > div > div.setting > p {
+  margin: 10px 0 20px 0;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#searchForm > div > div.setting > input[type=number] {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+
+#searchForm > div > div.option_annotation {
+  margin: 20px 50px 20px 50px;
+  padding: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#searchForm > div > div.option_annotation > p {
+  margin: 20px 0 20px 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color:rgb(252, 114, 112);
+}
+
+#searchForm > button {
+  margin: 20px 50px 0 0;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(250, 194, 108);
+  border: 0;
+}
+
+/* 옵션 끝 */
 
 section.result > div > table > tbody > tr > th {
   text-align: center;
   height: 70px;
 }
-
 
 section.result > div > table > tbody > tr > td {
   text-align: center;
@@ -382,11 +450,11 @@ section.result > div > table > tbody > tr > td {
   height: 700px;
   font-size: 0.6rem;
   text-align: center;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 #mytable > table > tbody > tr > th {
-  /* width: 100px; */
+  width: 100px;
   height: 50px;
 }
 
@@ -395,7 +463,7 @@ section.result > div > table > tbody > tr > td {
   border-bottom: 1px dotted rgb(108, 108, 108);
 }
 
-#csvDownloadButton {
+body > main > section > div > div:nth-child(8) > form > button {
   margin: 20px 0 0 0;
   padding: 10px 10px 10px 10px;
   font-size: 1.2rem;
@@ -405,9 +473,39 @@ section.result > div > table > tbody > tr > td {
   border: 0;
 }
 
+#paginationHtml > p {
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  font-size: 0.8rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
 
+#paginationHtml > p:hover {
+  cursor: pointer;
+}
 
+#paginationHtml > p:first-child,
+#paginationHtml > p:last-child {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
 
+.pagination_checked {
+  color: white;
+  background: rgb(132, 148, 253);
+}
+
+section.result > div > div:nth-child(6) > form > button {
+  margin: 20px 0 0 0;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 190, 190);
+  border: 0;
+}
 
 /* 9. search/noresult.php */
 section.noresult {
@@ -416,7 +514,7 @@ section.noresult {
   margin-bottom: 50px;
   padding: 0;
   width: 70%;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 section.noresult > div:nth-child(1) > p {
@@ -466,10 +564,6 @@ section.noresult > button {
   border: 0;
 }
 
-
-
-
-
 /* 10. search/nointeraction.php */
 section.nointeraction {
   margin: auto;
@@ -477,7 +571,7 @@ section.nointeraction {
   margin-bottom: 50px;
   padding: 0;
   width: 70%;
-  color:rgb(108, 108, 108);
+  color: rgb(108, 108, 108);
 }
 
 section.nointeraction > div:nth-child(1) > p {

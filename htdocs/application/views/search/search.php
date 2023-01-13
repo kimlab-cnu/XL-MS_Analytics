@@ -1,10 +1,19 @@
     <main class="contents">
       <section class="search">
-        <p>Search Protein Interaction<p>
+        <p>Search Protein Interaction</p>
         <form method="POST" class="searchbox" action="/search/result">
           <div>
             <div>
               <ul>
+                <li>
+                  <input type="hidden" name="page_now" value="<?php 
+                    if (empty($page_now)) {
+                      echo 1;
+                    } else {
+                      echo $page_now;
+                    }
+                  ?>">
+                </li>
                 <li>
                   <label for="Protein_id">
                     <p>Protein :</p>
@@ -59,38 +68,85 @@
                     <input type="text" name="sorting" placeholder="How many interaction would you like to see?" required />
                   </label>
                 </li>
+                
+                <!-- 임시 사용 -->
+                <li>
+                  <label for="probability">
+                    <p>Probability</p>
+                    0.<input type="text" name="probability" /> 
+                  </label>
+                </li>
+                <!--  -->
+
                 <li>
                   <label for="PeptideCharge">
                     <p>Peptide Charge</p>
-                    <select name="peptidecharge" required>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
+                    <label for="peptide_charge_1">
+                      1 <input id="peptide_charge_1" type="checkbox" name="peptidecharge[]" value="1">
+                    </label>
+                    <label for="peptide_charge_2">
+                      2 <input id="peptide_charge_2" type="checkbox" name="peptidecharge[]" value="2">
+                    </label>
+                    <label for="peptide_charge_3">
+                      3 <input id="peptide_charge_3" type="checkbox" name="peptidecharge[]" value="3">
+                    </label>
+                    <label for="peptide_charge_4">
+                      4 <input id="peptide_charge_4" type="checkbox" name="peptidecharge[]" value="4">
+                    </label>
+                    <label for="peptide_charge_5">
+                      5 <input id="peptide_charge_5" type="checkbox" name="peptidecharge[]" value="5">
+                    </label>
+                    <label for="peptide_charge_6">
+                      6 <input id="peptide_charge_6" type="checkbox" name="peptidecharge[]" value="6">
+                    </label>
+                    <label for="peptide_charge_7">
+                      7 <input id="peptide_charge_&" type="checkbox" name="peptidecharge[]" value="7">
+                    </label>
+                    <label for="peptide_charge_8">
+                      8 <input id="peptide_charge_*" type="checkbox" name="peptidecharge[]" value="8">
+                    </label>
+                    <label for="peptide_charge_9">
+                      9 <input id="peptide_charge_9" type="checkbox" name="peptidecharge[]" value="9">
+                    </label>
+                    <label for="peptide_charge_10">
+                      10 <input id="peptide_charge_10" type="checkbox" name="peptidecharge[]" value="10">
+                    </label>
                   </label>                
                 </li>
                 <li>
                   <label for="IonCharge">
                     <p>Ion Charge</p>
-                    <select name="ioncharge" required>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
+                    <label for="ion_charge_1">
+                      1 <input id="ioncharge_1" type="checkbox" name="ioncharge[]" value="1">
+                    </label>
+                    <label for="ion_charge_2">
+                      2 <input id="ioncharge_2" type="checkbox" name="ioncharge[]" value="2">
+                    </label>
+                    <label for="ion_charge_3">
+                      3 <input id="ioncharge_3" type="checkbox" name="ioncharge[]" value="3">
+                    </label>
+                    <label for="ion_charge_4">
+                      4 <input id="ioncharge_4" type="checkbox" name="ioncharge[]" value="4">
+                    </label>
+                    <label for="ion_charge_5">
+                      5 <input id="ioncharge_5" type="checkbox" name="ioncharge[]" value="5">
+                    </label>
+                    <label for="ion_charge_6">
+                      6 <input id="ioncharge_6" type="checkbox" name="ioncharge[]" value="6">
+                    </label>
+                    <label for="ion_charge_7">
+                      7 <input id="ioncharge_7" type="checkbox" name="ioncharge[]" value="7">
+                    </label>
+                    <label for="ion_charge_8">
+                      8 <input id="ioncharge_8" type="checkbox" name="ioncharge[]" value="8">
+                    </label>
+                    <label for="ion_charge_9">
+                      9 <input id="ioncharge_9" type="checkbox" name="ioncharge[]" value="9">
+                    </label>
+                    <label for="ion_charge_10">
+                      10 <input id="ioncharge_10" type="checkbox" name="ioncharge[]" value="10">
+                    </label>
+
                   </label>
                 </li>
               </ul>
@@ -122,7 +178,6 @@
             </div>
           </div>
           <div>
-            
             <button type="submit" onclick="location.href='result'">search</button>
           </div>
         </form>
