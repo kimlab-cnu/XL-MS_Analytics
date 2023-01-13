@@ -27,7 +27,6 @@ class Search extends CI_Controller {
         $this->load->view('common/footer');                
 	}
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     # search 결과도출 알고리즘 / result Page
     public function result()
@@ -97,18 +96,6 @@ class Search extends CI_Controller {
 
         $query = 'select * from amino_acid_mass';
         $aa_mass_all = $this->db->query($query)->result();
-
-        //$query = 'select protein2, combined_score from protein_interaction where protein1="'.$protein1_all->string.'" order by combined_score desc limit '.$ranking;
-        
-        ########################## // 임시 사용
-        $query = 'select protein2, combined_score from protein_interaction where protein1="'.$protein1_all->string.'"';
-
-        $probability = $this->input->post('probability');
-        if ($probability != '') {
-            $query = $query.' and combined_score="'.$probability.'"';
-        }
-        $query = $query.' order by combined_score desc limit '.$ranking;
-        ########################## // 임시 사용
   
         $protein2_interaction_all = $this->db->query($query)->result();
 
@@ -200,8 +187,6 @@ class Search extends CI_Controller {
         $sequenceID_arr = $sequenceID_arr_unset;     
         unset($sequenceID_arr_unset);     
 
-############################################## 2022-12-17 질량값 계산 부분 ############################################## 
-
 
         # 12. Calculate mass of peptide
         for ($i=0; $i<count($sequenceID_arr); $i++) {    
@@ -213,7 +198,7 @@ class Search extends CI_Controller {
                         $peptide_mass = $peptide_mass + (double)$aa_mass_all[$k]->monoisotopic;    
                         
                         if ($j == strlen($sequenceID_arr[$i]['peptide']) - 1) {
-                            $peptide_mass = $peptide_mass;   ###############################################
+                            $peptide_mass = $peptide_mass;   
                         }
                     }
                 }
@@ -341,7 +326,6 @@ class Search extends CI_Controller {
             }
             $protein2_all[$i]['sequenceID_arr'] = $sequenceID_arr;         
         }
-############################################## // 2022-12-17 질량값 계산 부분 ############################################## 
 
         # 14. Convert to 2 Demension Array from multi demension Array
         $protein1_result = [];    
@@ -708,31 +692,10 @@ class Search extends CI_Controller {
                         }
 
                         # 20-5. Calculate mass value considering peptide / ion charge
-                        // $protein1_peptide_mass2 = $protein1_peptide_mass / $peptidecharge[$j];
-                        // $protein2_peptide_mass2 = $protein2_peptide_mass / $peptidecharge[$j];     
-
-
-                        # Originaal code
-                        // $protein1_peptide_c_term_mass2 = $Proton + (($protein1_peptide_c_term_mass + $H2O) / $peptidecharge[$j]);    
-                        // $protein2_peptide_n_term_mass2 = $Proton + (($protein2_peptide_n_term_mass + $H2O) / $peptidecharge[$j]);    
-                        // $protein1_peptide_n_term_mass2 = $Proton + (($protein1_peptide_n_term_mass + $H2O) / $peptidecharge[$j]);    
-                        // $protein2_peptide_c_term_mass2 = $Proton + (($protein2_peptide_c_term_mass + $H2O) / $peptidecharge[$j]);     
-
-
                         $protein1_peptide_c_term_mass2 = $protein1_peptide_c_term_mass;    
                         $protein2_peptide_n_term_mass2 = $protein2_peptide_n_term_mass;    
                         $protein1_peptide_n_term_mass2 = $protein1_peptide_n_term_mass;    
                         $protein2_peptide_c_term_mass2 = $protein2_peptide_c_term_mass;    
-
-
-                        // $protein1_ion_mass2 = $protein1_ion_mass / $ioncharge[$k];  
-                        // $protein2_ion_mass2 = $protein2_ion_mass / $ioncharge[$k];     
-
-                        # Original code
-                        // $protein1_ion_c_term_mass2 = $Proton + ($protein1_ion_c_term_mass + $H2O) / $ioncharge[$k];    
-                        // $protein2_ion_n_term_mass2 = $Proton + ($protein2_ion_n_term_mass + $H2O)/ $ioncharge[$k];    
-                        // $protein1_ion_n_term_mass2 = $Proton + ($protein1_ion_n_term_mass + $H2O) / $ioncharge[$k];    
-                        // $protein2_ion_c_term_mass2 = $Proton + ($protein2_ion_c_term_mass + $H2O) / $ioncharge[$k];    
                         
                         $protein1_ion_c_term_mass2 = $protein1_ion_c_term_mass;    
                         $protein2_ion_n_term_mass2 = $protein2_ion_n_term_mass;    
@@ -882,8 +845,6 @@ class Search extends CI_Controller {
 
 
 
-#####################################################################
-
 # Code repeat for Export Result Data
 
     public function result_csv()
@@ -955,18 +916,6 @@ class Search extends CI_Controller {
 
        $query = 'select * from amino_acid_mass';
        $aa_mass_all = $this->db->query($query)->result();
-
-       //$query = 'select protein2, combined_score from protein_interaction where protein1="'.$protein1_all->string.'" order by combined_score desc limit '.$ranking;
-       
-       ########################## // 임시 사용
-       $query = 'select protein2, combined_score from protein_interaction where protein1="'.$protein1_all->string.'"';
-
-       $probability = $this->input->post('probability');
-       if ($probability != '') {
-           $query = $query.' and combined_score="'.$probability.'"';
-       }
-       $query = $query.' order by combined_score desc limit '.$ranking;
-       ########################## // 임시 사용
  
        $protein2_interaction_all = $this->db->query($query)->result();
 
@@ -1056,9 +1005,7 @@ class Search extends CI_Controller {
            }
        }
        $sequenceID_arr = $sequenceID_arr_unset;     
-       unset($sequenceID_arr_unset);     
-
-############################################## 2022-12-17 질량값 계산 부분 ############################################## 
+       unset($sequenceID_arr_unset);    
 
 
        # 12. Calculate mass of peptide
@@ -1071,7 +1018,7 @@ class Search extends CI_Controller {
                        $peptide_mass = $peptide_mass + (double)$aa_mass_all[$k]->monoisotopic;    
                        
                        if ($j == strlen($sequenceID_arr[$i]['peptide']) - 1) {
-                           $peptide_mass = $peptide_mass;   ###############################################
+                           $peptide_mass = $peptide_mass;  
                        }
                    }
                }
@@ -1199,7 +1146,6 @@ class Search extends CI_Controller {
            }
            $protein2_all[$i]['sequenceID_arr'] = $sequenceID_arr;         
        }
-############################################## // 2022-12-17 질량값 계산 부분 ############################################## 
 
        # 14. Convert to 2 Demension Array from multi demension Array
        $protein1_result = [];    
@@ -1566,31 +1512,10 @@ class Search extends CI_Controller {
                        }
 
                        # 20-5. Calculate mass value considering peptide / ion charge
-                       // $protein1_peptide_mass2 = $protein1_peptide_mass / $peptidecharge[$j];
-                       // $protein2_peptide_mass2 = $protein2_peptide_mass / $peptidecharge[$j];     
-
-
-                       # Originaal code
-                       // $protein1_peptide_c_term_mass2 = $Proton + (($protein1_peptide_c_term_mass + $H2O) / $peptidecharge[$j]);    
-                       // $protein2_peptide_n_term_mass2 = $Proton + (($protein2_peptide_n_term_mass + $H2O) / $peptidecharge[$j]);    
-                       // $protein1_peptide_n_term_mass2 = $Proton + (($protein1_peptide_n_term_mass + $H2O) / $peptidecharge[$j]);    
-                       // $protein2_peptide_c_term_mass2 = $Proton + (($protein2_peptide_c_term_mass + $H2O) / $peptidecharge[$j]);     
-
-
                        $protein1_peptide_c_term_mass2 = $protein1_peptide_c_term_mass;    
                        $protein2_peptide_n_term_mass2 = $protein2_peptide_n_term_mass;    
                        $protein1_peptide_n_term_mass2 = $protein1_peptide_n_term_mass;    
                        $protein2_peptide_c_term_mass2 = $protein2_peptide_c_term_mass;    
-
-
-                       // $protein1_ion_mass2 = $protein1_ion_mass / $ioncharge[$k];  
-                       // $protein2_ion_mass2 = $protein2_ion_mass / $ioncharge[$k];     
-
-                       # Original code
-                       // $protein1_ion_c_term_mass2 = $Proton + ($protein1_ion_c_term_mass + $H2O) / $ioncharge[$k];    
-                       // $protein2_ion_n_term_mass2 = $Proton + ($protein2_ion_n_term_mass + $H2O)/ $ioncharge[$k];    
-                       // $protein1_ion_n_term_mass2 = $Proton + ($protein1_ion_n_term_mass + $H2O) / $ioncharge[$k];    
-                       // $protein2_ion_c_term_mass2 = $Proton + ($protein2_ion_c_term_mass + $H2O) / $ioncharge[$k];    
                        
                        $protein1_ion_c_term_mass2 = $protein1_ion_c_term_mass;    
                        $protein2_ion_n_term_mass2 = $protein2_ion_n_term_mass;    
@@ -1637,12 +1562,6 @@ class Search extends CI_Controller {
        $result = $result_c;   
        unset($result_c);
 
-        
-
-        
-#####################################################################
-
-
         # Button of Export Data
 
         $filename = 'Result.csv';
@@ -1651,8 +1570,6 @@ class Search extends CI_Controller {
         header('Content-Disposition: attachment; filename=' . $filename);
 
         $handle = fopen('php://output', 'w');
-        // $columns = $Index."\t".$score."\t".$Protein1_Peptide."\t".$Cross_Linker."\t".$Protrin2_Peptide."\t".$Peptide_Charge."\t".$Protein1_C_trem_Mass."\t".$Center_Mass."\t".$Protein2_N_term_Mass."\t".$Protein1_N_term_Mass."\t".$Center_Mass."\t".$Protein2_C_term_Mass."\t".$Ion_Charge."\t".$Protein1_Ion_type."\t".$Protein1_Ion."\t".$Protein2_Ion_type."\t".$Protein2_Ion."\t".$Protein1_Ion_C_term_Mass."\t".$Center_Mass."\t".$Protein2_Ion_N_term_Mass."\t".$Protein1_N_term_Mass."\t".$Center_Mass."\t".$Protein2_C_term_Mass."\n";
-        // fwrite($handle, $columns);
         fputs($handle, $bom = (chr(0xEF) . chr(0xBB) . chr(0xBF)));
 
         foreach ($result as $fields) {
