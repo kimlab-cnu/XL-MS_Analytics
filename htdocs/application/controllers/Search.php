@@ -48,16 +48,6 @@ class Search extends CI_Controller {
         $Proton = 1.00727649;
         $H2O = 18.01056468403;
 
-        $score_min = $this->input->post('score_min');
-        $score_max = $this->input->post('score_max');
-        if (!empty($score_min)) {
-            $score_min = $score_min * 1000;
-        }
-        if (!empty($score_max)) {
-            $score_max = $score_max * 1000;
-        }
-      
-
         # 2. Amino Acid string of modifications 
         $carbamidomethyl_c_str = 'C';
         $oxidation_m_str = 'M';
