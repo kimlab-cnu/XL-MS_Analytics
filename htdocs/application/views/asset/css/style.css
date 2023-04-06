@@ -1,0 +1,740 @@
+/* 1. 공통 */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* 2. common/header.php  */
+div.main-home > div {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+div.main-home > div > a {
+  margin: 0 0 0 50px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+div.main-home > div > a > h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+div.main-home > div > a > p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  border-top: 1px solid rgb(108, 108, 108);
+}
+
+nav.main-nav {
+  margin: 20px 0 0 0;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+}
+
+nav.main-nav > ul > li {
+  margin: 0 30px 0 30px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* 3. common/footer.php */
+footer {
+  margin: 50px 0 50px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 4. main/main.php */
+main.contents {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+section.main-img {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 700px;
+}
+
+section.main-img > img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -74px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+section.main-img > div.maincontents {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+div.maincontents > h2 {
+  margin: 70px 0 50px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+ul.main-page {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.main-page > li {
+  margin: 30px;
+  padding: 0;
+  display: inline-block;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+ul.main-page > li > p:first-child {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+ul.main-page > li > p:last-child {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+div.readme {
+  margin: 100px;
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/* 5. userguide/userguide.php */
+body > main > section.userguide > h4 {
+  margin: 50px 0 50px 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(108, 108, 108);
+}
+
+body > main > section.userguide > div {
+  margin: 0;
+  padding: 50px 0 50px 0;
+}
+body > main > section.userguide > div > div > div:nth-child(1) {
+  margin: auto;
+  padding: 0;
+  width: 49%;
+  display: inline-flex;
+  text-align: center;
+}
+
+body > main > section.userguide > div > div > div:nth-child(1) > table {
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  text-align: center;
+}
+
+body > main > section.userguide > div > div > div:nth-child(1) > table > tbody > tr:nth-child(1) > th {
+  margin: 0;
+  padding: 0 0 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(108, 108, 108);
+}
+
+body > main > section.userguide > div > div > div:nth-child(1) > table > tbody > tr:nth-child(3) > td {
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: justify;
+  font-size: 1rem;
+  color: rgb(108, 108, 108);
+}
+
+body > main > section.userguide > div > div > div:nth-child(2) {
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  display: inline-flex;
+  text-align: center;
+}
+
+body > main > section.userguide > div > div > div:nth-child(2) > table {
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  text-align: center;
+}
+
+body > main > section.userguide > div > div > div:nth-child(2) > table > tbody > tr:nth-child(1) > th {
+  margin: 0;
+  padding: 0 0 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(108, 108, 108);
+}
+
+body > main > section.userguide > div > div > div:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(1),
+body > main > section.userguide > div > div > div:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(108, 108, 108);
+}
+
+body > main > section.userguide > div > div > div:nth-child(2) > table > tbody > tr > td {
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: justify;
+  font-size: 1rem;
+  color: rgb(108, 108, 108);
+}
+
+
+
+/* 6. crosslinker/crosslinker.php & humanprotein/humanprotein.php */
+section.db-list {
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+section.db-list > div > table {
+  width: 100%;
+  font-size: 0.9rem;
+  color: rgb(108, 108, 108);
+}
+
+section.db-list > div > table > tbody > tr > th {
+  font-size: 1rem;
+  width: 100px;
+  height: 50px;
+}
+
+section.db-list > div > table > tbody > tr > td {
+  text-align: center;
+  border-bottom: 1px dotted rgb(108, 108, 108);
+}
+
+
+/* 7. search/search.php */
+section.search > p {
+  margin: 0;
+  padding: 50px 0 0 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(108, 108, 108);
+}
+
+form.searchbox > div:nth-child(1) {
+  margin: 0 0 20px 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+form.searchbox > div:nth-child(1) > div > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+form.searchbox > div:nth-child(1) > div > ul > li > label > p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(108, 108, 108);
+}
+
+form.searchbox > div div > ul > li > label > input {
+  margin: 0 0 20px 0;
+  width: 358px;
+  height: 30px;
+}
+
+form.searchbox > div div > ul > li > label > select {
+  margin: 0 0 20px 0;
+  width: 358px;
+  height: 30px;
+}
+
+form.searchbox > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(4) > p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(108, 108, 108);
+}
+
+form.searchbox >  div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(4) > label {
+  margin: 0 20px 0 0;
+  width: 10px;
+  height: 10px;
+}
+
+form.searchbox >  div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(5) > label {
+  margin: 0 20px 0 0;
+  width: 10px;
+  height: 10px;
+}
+
+form.searchbox > div:nth-child(1) > div.modifications > ul > p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(108, 108, 108);
+}
+
+form.searchbox > div:nth-child(1) > div.modifications > ul > li > p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(108, 108, 108);
+}
+
+form.searchbox > div:nth-child(1) > div.modifications > ul > li > div > p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(108, 108, 108);
+}
+
+form.searchbox > div:nth-child(1) > div.modifications > ul > li > label > input {
+  margin: 0 20px 0 0;
+  width: 10px;
+  height: 10px;
+}
+
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(2) > div > label:nth-child(2),
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(2) > div > label:nth-child(3),
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(3) > div > label:nth-child(2),
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(3) > div > label:nth-child(3) {
+  margin: 0 0 0 20px;
+}
+
+body > main > section > form > div:nth-child(2) > button {
+  margin: 0 0 50px 0;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 190, 190);
+  border: 0;
+}
+
+/* 8. search/result.php */
+body > main > section.result > div > div:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body > main > section > div > div:nth-child(1) > div.identify_ppis {
+  display: inline-block;
+  margin: 20px 0 10px 0;
+  background-color: #ffffff;
+}
+
+body > main > section > div > div:nth-child(1) > div.identify_ppis > p {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body > main > section > div > div:nth-child(1) > div.identify_ppis > h4 {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 1.2rem;
+  color: rgb(90, 90, 255);
+}
+
+body > main > section > div > div:nth-child(1) > div.identify_ppis > table {
+  margin: 10px 20px 20px 0;
+  padding: 0;
+  width: 100%;
+  font-size: 0.9rem;
+
+  color: rgb(108, 108, 108);
+  border: 1px solid rgb(190, 190, 190);
+  white-space: nowrap;
+}
+
+body > main > section > div > div:nth-child(1) > div.identify_ppis > table > tbody > tr:nth-child(2) > td {
+  font-size: 0.9rem;
+  text-align: center;
+  color: rgb(108, 108, 108);
+  white-space: nowrap;
+}
+
+body > main > section.result > div:nth-child(1) > div > div.column_description {
+  margin: 0 0 0 70px;
+  width: 900px;
+  display: inline-block;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+body > main > section.result > div > div:nth-child(1) > div.column_description > h4 {
+  margin: 10px 0 0 0;
+  padding: 0 0 10px 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(108, 108, 108);
+}
+
+body > main > section.result > div > div:nth-child(1) > div.column_description > table {
+  margin: 10px 0 10px 0;
+  padding: 0;
+  width: 100%;
+  font-size: 0.6rem;
+  color: rgb(108, 108, 108);
+  text-align: justify;
+  white-space: nowrap;
+}
+
+body > main > section.result > div > div:nth-child(1) > div.column_description > table > tbody > tr {
+  margin: 0;
+  padding: 0 20px 10px 0;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+body > main > section.result > div > div:nth-child(1) > div.column_description > table > tbody > tr > td {
+  margin: 0;
+  padding: 0 20px 10px 0;
+}
+
+body > main > section > div > div:nth-child(1) > div.column_description > table > tbody > tr:nth-child(13) > td {
+  font-weight: bold;
+}
+
+body > main > section > div > div:nth-child(1) > div.column_description > table > tbody > tr:nth-child(4) > td:nth-child(1) {
+  font-weight: bolder;
+  color: rgb(90, 90, 255);
+}
+
+body > main > section > div > div:nth-child(1) > div.column_description > table > tbody > tr:nth-child(4) > td:nth-child(2) {
+  font-weight: bolder;
+  color: rgb(90, 90, 255);
+}
+
+/* Setting */
+#searchForm > div {
+  display: inline-block;
+}
+#searchForm > div > div:nth-child(2) {
+  display: inline-block;
+}
+
+body > main > section > div > div:nth-child(2) {
+  margin: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+#searchForm > div > h4 {
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(108, 108, 108);
+}
+
+#searchForm > div > div:nth-child(2) > div.summary_score {
+  display: inline-block;
+  margin: 0 80px 0 0;
+  padding: 0;
+}
+
+#searchForm > div > div:nth-child(2) > div.summary_score > h4 {
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(108, 108, 108);
+}
+
+#searchForm > div > div:nth-child(2) > div.summary_score > input[type=number] {
+  margin: 0px 0 10px 0;
+  padding: 0;
+  width: 50%;
+}
+
+#searchForm > div > div:nth-child(2) > div.combined_score {
+  margin: 0 80px 0 80px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: red;
+}
+
+#searchForm > div > div:nth-child(3) {
+  display: inline-block;
+}
+
+#searchForm > div > div:nth-child(3) > div > h4 {
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(108, 108, 108);
+}
+
+#searchForm > div > div:nth-child(3) > div > input[type=text] {
+  margin: 0px 0 10px 0;
+  padding: 0;
+  width: 100%;
+}
+
+#searchForm > div > div.submit_research {
+  margin: 0;
+  padding: 50px;
+}
+
+/* UPDATE Button */
+#searchForm > div > div.submit_research > button {
+  margin: 20px 50px 0 0;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(250, 194, 108);
+  border: 0;
+}
+
+body > main > section.result > div > div.calculate_mass > table {
+  margin: 0 0 50px 20px;
+  padding: 0;
+  width: 100%;
+  height: 700px;
+  font-size: 0.6rem;
+  color: rgb(108, 108, 108);
+}
+
+body > main > section.result > div > div.calculate_mass > table > tbody > tr > th {
+  width: 100px;
+  height: 50px;
+}
+
+body > main > section.result > div > div.calculate_mass > table > tbody > tr > td {
+  text-align: center;
+  border-bottom: 1px dotted rgb(108, 108, 108);
+}
+
+body > main > section > div > div.calculate_mass > div {
+  margin: 0 0 0 50px;
+  padding: 0;
+  text-align: left;
+}
+
+body > main > section > div > div.calculate_mass > div > p {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+body > main > section > div > div.calculate_mass > div > h4 {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  padding: 0;
+  font-size: 1.2rem;
+  color: rgb(90, 90, 255);
+}
+
+#paginationHtml {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#paginationHtml > p {
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+#paginationHtml > p:hover {
+  cursor: pointer;
+}
+
+#paginationHtml > p:first-child,
+#paginationHtml > p:last-child {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.pagination_checked {
+  color: white;
+  background: rgb(132, 148, 253);
+}
+
+body > main > section.result > div > div:nth-child(5) > form {
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+body > main > section.result > div > div:nth-child(5) > form > button {
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 190, 190);
+  border: 0;
+}
+
+/* 9. search/noresult.php */
+section.noresult {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+  width: 70%;
+  color: rgb(108, 108, 108);
+}
+
+section.noresult > div:nth-child(1) > p {
+  margin: 70px 0 70px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section.noresult > div:nth-child(2) {
+  margin: auto;
+  padding: 0;
+  width: 700px;
+}
+
+section.noresult > div:nth-child(2) > div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+section.noresult > div:nth-child(2) > div > p {
+  margin: 50px 0 50px 0;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+section.noresult > div:nth-child(2) > div > h4 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: rgb(90, 90, 255);
+}
+
+section.noresult > button {
+  margin: 20px 0 0 0;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 190, 190);
+  border: 0;
+}
+
+/* 10. search/nointeraction.php */
+section.nointeraction {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+  width: 70%;
+  color: rgb(108, 108, 108);
+}
+
+section.nointeraction > div:nth-child(1) > p {
+  margin: 70px 0 70px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section.nointeraction > div:nth-child(2) {
+  margin: auto;
+  padding: 0;
+  width: 700px;
+}
+
+section.nointeraction > div:nth-child(2) > div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+section.nointeraction > div:nth-child(2) > div > p {
+  margin: 50px 0 50px 0;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+section.nointeraction > div:nth-child(2) > div > h4 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: rgb(90, 90, 255);
+}
+
+section.nointeraction > button {
+  margin: 20px 0 0 0;
+  padding: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 190, 190);
+  border: 0;
+}
