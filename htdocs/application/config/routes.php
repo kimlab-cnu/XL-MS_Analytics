@@ -54,15 +54,13 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // project
-// $route['controlers의 파일명'] = '클래스명/함수명';
-$route['main'] = 'main/index';
-$route['userguide'] = 'userguide/index';
-$route['search'] = 'search/index';
-$route['search/result'] = 'search/result';
-$route['search/noresult'] = 'search/noresult';
-$route['search/nointeraction'] = 'search/nointeraction';
-$route['crosslinker'] = 'crosslinker/index';
-$route['humanprotein'] = 'humanprotein/index';
+$route['main']='main/index';
+$route['userguide']='userguide/index';
 
+$route['crosslinker']='crosslinker/index';
+$route['humanprotein']='humanprotein/index';
 
-$route['csvtest'] = 'csvtest/index';
+$route['search']='search/index';
+$route['search/result']='search/result';
+$route['search/noresult']='search/noresult';
+$route['search/nointeraction']='search/nointeraction';

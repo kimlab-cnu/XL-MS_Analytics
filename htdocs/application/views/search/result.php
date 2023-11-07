@@ -227,7 +227,7 @@
                         for ($i=0;$i<count($input_info['ioncharge']);$i++){
                             echo '<input type="hidden" name="ioncharge[]" value="'.$input_info['ioncharge'][$i].'"/>';
                         }?>
-                        <input id="pageNow" type="hidden" name="page_now" value="<?php echo $input_info['page_now'];?>">
+                        <input id="pageNowPagination" type="hidden" name="page_now" value="<?php echo $input_info['page_now'];?>">
 
                         <div id="paginationHtml">
                             <?php 
@@ -244,18 +244,18 @@
                                 }
                             }
                             if ($input_info['page_now']==$input_info['page_group_total']){
-                                echo '<p class="pagination)checked onclick="paginationBtn()">'.$input_info['page_group_total'].'</p>';
+                                echo '<p class="pagination_checked" onclick="paginationBtn()">'.$input_info['page_group_total'].'</p>';
                             } else {
                                 echo '<p onclick="paginationBtn()">'.$input_info['page_group_total'].'</p>';
                             }?>
-                            <script>// pagination button
-                                function paginationBtn(){
-                                    var page_now=event.target.textContent;
-                                    document.getElementById('pageNow').value=page_now;
-                                    document.getElementById('formResultPagination').submit();
-                                }
-                            </script>
                         </div><!-- // paginationHtml -->
+                        <script>// pagination button
+                            function paginationBtn(){
+                                var page_now=event.target.textContent;
+                                document.getElementById('pageNowPagination').value=page_now;
+                                document.getElementById('formResultPagination').submit();
+                            }
+                        </script>
                     </form><!-- // pagination -->
                     <div>
                         <form method="POST" action="/search/result_csv">

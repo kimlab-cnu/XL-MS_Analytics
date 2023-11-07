@@ -21,6 +21,9 @@
             <nav class="main-nav">
                 <ul>
                     <li>
+                        <a href="/userguide">User Guide</a>
+                    </li>
+                    <li>
                         <a href="/search">Search</a>
                     </li>
                     <li>

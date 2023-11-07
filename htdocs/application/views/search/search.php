@@ -68,7 +68,7 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <label for="peptidecharge">
+                                    <div>
                                         <p>Peptide Charge</p>
                                         <label for="peptide_charge_1">
                                             1<input id="peptide_charge_1" type="checkbox" name="peptidecharge[]" value="1">
@@ -100,10 +100,10 @@
                                         <label for="peptide_charge_10">
                                             10<input id="peptide_charge_10" type="checkbox" name="peptidecharge[]" value="10">
                                         </label>
-                                    </label>
+                                        </div>
                                 </li>
                                 <li>
-                                    <label for="ioncharge">
+                                    <div>
                                         <p>Ion Charge</p>
                                         <label for="ion_charge_1">
                                             1<input id="ion_charge_1" type="checkbox" name="ioncharge[]" value="1">
@@ -135,7 +135,7 @@
                                         <label for="ion_charge_10">
                                             10<input id="ion_charge_10" type="checkbox" name="ioncharge[]" value="10">
                                         </label>
-                                    </label>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
