@@ -1,4 +1,4 @@
-/* 1. common */
+/* 1. 공통 */
 * {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   list-style-type: none;
@@ -141,209 +141,89 @@ div.readme {
 }
 
 /* 5. userguide/userguide.php */
+
+/* userguide 타이틀 */
 section.userguide > h4 {
   margin: 50px 0 50px 0;
   padding: 0 0 10px 0;
   text-align: center;
   font-size: 2rem;
-  color: rgb(108, 108, 108);
+  color: rgb(88, 48, 247)
+} 
+
+section.userguide > div > div > div > div > div:nth-child(2),
+section.userguide > div > div > div > div > div:nth-child(3) {
+  margin: 70px 0;
+  padding: 0;
+
 }
 
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(1)
-  > p:nth-child(1) {
-  width: 70%;
-  margin: 0 auto;
+section.userguide > div > div > div > div > div > h5 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: rgb(88, 88, 88);
+}
+
+section.userguide > div > div > div > div > div > p {
+  margin: 5px 0 15px 0;
+  padding: 0;
+  color: rgb(133, 133, 133);
+}
+
+
+section.userguide > div > div > div > div > div:nth-child(2) > div:nth-child(1),
+section.userguide > div > div > div > div > div:nth-child(2) > div:nth-child(2) {
+  width: calc(50% - 35px);
+  margin: 0 15px 0 15px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
   text-align: justify;
   color: rgb(133, 133, 133);
 }
 
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(1)
-  > p:nth-child(2) {
-  width: 70%;
-  margin: 50px auto;
-  font-weight: bold;
-  color: rgb(133, 133, 133);
-}
-
-section.userguide > div > div.section1 > div > div:nth-child(2) > h5 {
-  margin: 70px;
+section.userguide > div > div > div > div > div > div > h5 {
+  margin: 0 0 10px 0;
   padding: 0;
   font-size: 1.5rem;
-  color: rgb(108, 108, 108);
+  color: rgb(88, 88, 88);
 }
 
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(2) {
-  width: calc(50% - 10px);
-  margin: 0;
+section.userguide > div > div > div > div > div:nth-child(3) > p {
+  margin: 5px 0 15px 0;
+  padding: 0;
+}
+
+section.userguide > div > div > div > div > div:nth-child(4) {
+  margin: 30px 0;
+  padding: 0;
+}
+
+section.userguide > div > div > div > div > div:nth-child(3) > div:nth-child(1),
+section.userguide > div > div > div > div > div:nth-child(3) > div:nth-child(2) {
+  width: calc(50% - 35px);
+  margin: 0 15px 0 15px;
   padding: 0;
   display: inline-block;
   vertical-align: top;
+  text-align: justify;
+  color: rgb(133, 133, 133);
 }
 
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(2)
-  > p {
-  margin: 0;
-  padding: 0;
-  display: left;
+section.userguide > div > div > div > div > strong > strong > div > div:nth-child(1) > h5:nth-child(2) {
   text-align: left;
+  font-size: 1rem;
   color: rgb(133, 133, 133);
 }
 
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(2)
-  > p:nth-child(2) {
-  margin: 10px 0;
-  padding: 0;
-}
-
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(2)
-  > p
-  > strong {
-  color: rgb(108, 108, 108);
-}
-
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(3) {
-  width: calc(50% - 10px);
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  vertical-align: top;
-}
-
-section > div > div.section1 > div > div:nth-child(2) > div:nth-child(3) > p {
-  margin: 0;
-  padding: 0;
-  display: left;
+section.userguide > div > div > div > div > strong > strong > div > div:nth-child(2) > h5 {
   text-align: left;
-  color: rgb(133, 133, 133);
-}
-
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(3)
-  > h5 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
-}
-
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(3)
-  > p
-  > strong {
-  display: inline-block;
-  width: 100px;
-  margin: 0 10px 10px 0;
-  padding: 0;
-}
-
-section.userguide
-  > div
-  > div.section1
-  > div
-  > div:nth-child(2)
-  > div:nth-child(3)
-  > p:nth-child(5) {
-  margin: 20px 0 0 0;
-}
-
-section.userguide > div > div.section2 > div > div:nth-child(1) {
-  margin: 100px 0 0 0;
-  padding: 0;
-  color: rgb(133, 133, 133);
-}
-
-section.userguide > div > div.section2 > div > div:nth-child(2) > h5 {
-  margin: 50px 0 30px 0;
-  padding: 0;
   font-size: 1.5rem;
-  color: rgb(108, 108, 108);
+  color: rgb(88, 88, 88);
 }
 
-section.userguide > div > div.section2 > div > div:nth-child(2) > table {
-  width: 80%;
-  margin: 0 auto;
-}
 
-section.userguide
-  > div
-  > div.section2
-  > div
-  > div:nth-child(2)
-  > table
-  > tbody
-  > tr:nth-child(1)
-  > th:nth-child(1) {
-  width: 200px;
-  margin: 0;
-  padding: 0;
-}
-
-section.userguide
-  > div
-  > div.section2
-  > div
-  > div:nth-child(2)
-  > table
-  > tbody
-  > tr:nth-child(1) {
-  color: rgb(108, 108, 108);
-}
-
-section.userguide
-  > div
-  > div.section2
-  > div
-  > div:nth-child(2)
-  > table
-  > tbody
-  > tr
-  > td {
-  margin: 0;
-  padding: 10px 0 10px 20px;
-  text-align: left;
-  color: rgb(133, 133, 133);
-  border-bottom: 1px dotted rgb(108, 108, 108);
-}
 
 /* 6. crosslinker/crosslinker.php & humanprotein/humanprotein.php */
 section.db-list {
@@ -367,6 +247,7 @@ section.db-list > div > table > tbody > tr > td {
   text-align: center;
   border-bottom: 1px dotted rgb(108, 108, 108);
 }
+
 
 /* 7. search/search.php */
 section.search > p {
@@ -408,35 +289,20 @@ form.searchbox > div div > ul > li > label > select {
   height: 30px;
 }
 
-form.searchbox
-  > div:nth-child(1)
-  > div:nth-child(2)
-  > ul
-  > li:nth-child(4)
-  > p {
+form.searchbox > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(4) > p {
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
   color: rgb(108, 108, 108);
 }
 
-form.searchbox
-  > div:nth-child(1)
-  > div:nth-child(2)
-  > ul
-  > li:nth-child(4)
-  > label {
+form.searchbox >  div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(4) > label {
   margin: 0 20px 0 0;
   width: 10px;
   height: 10px;
 }
 
-form.searchbox
-  > div:nth-child(1)
-  > div:nth-child(2)
-  > ul
-  > li:nth-child(5)
-  > label {
+form.searchbox >  div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(5) > label {
   margin: 0 20px 0 0;
   width: 10px;
   height: 10px;
@@ -463,58 +329,16 @@ form.searchbox > div:nth-child(1) > div.modifications > ul > li > div > p {
   color: rgb(108, 108, 108);
 }
 
-form.searchbox
-  > div:nth-child(1)
-  > div.modifications
-  > ul
-  > li
-  > label
-  > input {
+form.searchbox > div:nth-child(1) > div.modifications > ul > li > label > input {
   margin: 0 20px 0 0;
   width: 10px;
   height: 10px;
 }
 
-body
-  > main
-  > section
-  > form
-  > div:nth-child(1)
-  > div.modifications
-  > ul
-  > li:nth-child(2)
-  > div
-  > label:nth-child(2),
-body
-  > main
-  > section
-  > form
-  > div:nth-child(1)
-  > div.modifications
-  > ul
-  > li:nth-child(2)
-  > div
-  > label:nth-child(3),
-body
-  > main
-  > section
-  > form
-  > div:nth-child(1)
-  > div.modifications
-  > ul
-  > li:nth-child(3)
-  > div
-  > label:nth-child(2),
-body
-  > main
-  > section
-  > form
-  > div:nth-child(1)
-  > div.modifications
-  > ul
-  > li:nth-child(3)
-  > div
-  > label:nth-child(3) {
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(2) > div > label:nth-child(2),
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(2) > div > label:nth-child(3),
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(3) > div > label:nth-child(2),
+body > main > section > form > div:nth-child(1) > div.modifications > ul > li:nth-child(3) > div > label:nth-child(3) {
   margin: 0 0 0 20px;
 }
 
@@ -568,16 +392,7 @@ body > main > section > div > div:nth-child(1) > div.identify_ppis > table {
   white-space: nowrap;
 }
 
-body
-  > main
-  > section
-  > div
-  > div:nth-child(1)
-  > div.identify_ppis
-  > table
-  > tbody
-  > tr:nth-child(2)
-  > td {
+body > main > section > div > div:nth-child(1) > div.identify_ppis > table > tbody > tr:nth-child(2) > td {
   font-size: 0.9rem;
   text-align: center;
   color: rgb(108, 108, 108);
@@ -592,13 +407,7 @@ body > main > section.result > div:nth-child(1) > div > div.column_description {
   background-color: #ffffff;
 }
 
-body
-  > main
-  > section.result
-  > div
-  > div:nth-child(1)
-  > div.column_description
-  > h4 {
+body > main > section.result > div > div:nth-child(1) > div.column_description > h4 {
   margin: 10px 0 0 0;
   padding: 0 0 10px 0;
   display: inline-block;
@@ -607,13 +416,7 @@ body
   color: rgb(108, 108, 108);
 }
 
-body
-  > main
-  > section.result
-  > div
-  > div:nth-child(1)
-  > div.column_description
-  > table {
+body > main > section.result > div > div:nth-child(1) > div.column_description > table {
   margin: 10px 0 10px 0;
   padding: 0;
   width: 100%;
@@ -623,71 +426,27 @@ body
   white-space: nowrap;
 }
 
-body
-  > main
-  > section.result
-  > div
-  > div:nth-child(1)
-  > div.column_description
-  > table
-  > tbody
-  > tr {
+body > main > section.result > div > div:nth-child(1) > div.column_description > table > tbody > tr {
   margin: 0;
   padding: 0 20px 10px 0;
   border-bottom: 1px solid rgb(190, 190, 190);
 }
 
-body
-  > main
-  > section.result
-  > div
-  > div:nth-child(1)
-  > div.column_description
-  > table
-  > tbody
-  > tr
-  > td {
+body > main > section.result > div > div:nth-child(1) > div.column_description > table > tbody > tr > td {
   margin: 0;
   padding: 0 20px 10px 0;
 }
 
-body
-  > main
-  > section
-  > div
-  > div:nth-child(1)
-  > div.column_description
-  > table
-  > tbody
-  > tr:nth-child(13)
-  > td {
+body > main > section > div > div:nth-child(1) > div.column_description > table > tbody > tr:nth-child(13) > td {
   font-weight: bold;
 }
 
-body
-  > main
-  > section
-  > div
-  > div:nth-child(1)
-  > div.column_description
-  > table
-  > tbody
-  > tr:nth-child(4)
-  > td:nth-child(1) {
+body > main > section > div > div:nth-child(1) > div.column_description > table > tbody > tr:nth-child(4) > td:nth-child(1) {
   font-weight: bolder;
   color: rgb(90, 90, 255);
 }
 
-body
-  > main
-  > section
-  > div
-  > div:nth-child(1)
-  > div.column_description
-  > table
-  > tbody
-  > tr:nth-child(4)
-  > td:nth-child(2) {
+body > main > section > div > div:nth-child(1) > div.column_description > table > tbody > tr:nth-child(4) > td:nth-child(2) {
   font-weight: bolder;
   color: rgb(90, 90, 255);
 }
@@ -728,11 +487,7 @@ body > main > section > div > div:nth-child(2) {
   color: rgb(108, 108, 108);
 }
 
-#searchForm
-  > div
-  > div:nth-child(2)
-  > div.summary_score
-  > input[type="number"] {
+#searchForm > div > div:nth-child(2) > div.summary_score > input[type=number] {
   margin: 0px 0 10px 0;
   padding: 0;
   width: 50%;
@@ -759,7 +514,7 @@ body > main > section > div > div:nth-child(2) {
   color: rgb(108, 108, 108);
 }
 
-#searchForm > div > div:nth-child(3) > div > input[type="text"] {
+#searchForm > div > div:nth-child(3) > div > input[type=text] {
   margin: 0px 0 10px 0;
   padding: 0;
   width: 100%;
@@ -790,28 +545,12 @@ body > main > section.result > div > div.calculate_mass > table {
   color: rgb(108, 108, 108);
 }
 
-body
-  > main
-  > section.result
-  > div
-  > div.calculate_mass
-  > table
-  > tbody
-  > tr
-  > th {
+body > main > section.result > div > div.calculate_mass > table > tbody > tr > th {
   width: 100px;
   height: 50px;
 }
 
-body
-  > main
-  > section.result
-  > div
-  > div.calculate_mass
-  > table
-  > tbody
-  > tr
-  > td {
+body > main > section.result > div > div.calculate_mass > table > tbody > tr > td {
   text-align: center;
   border-bottom: 1px dotted rgb(108, 108, 108);
 }
